@@ -48,7 +48,8 @@ main{
   float: right;
   color: white;
   background-color: #141922;
-  /* height: calc(100% - 180px); */
+  height: 100%;
+  /* height: calc(230vh - 80px); */
   width: calc(100% - 200px);
   overflow: hidden;
 }
@@ -59,12 +60,14 @@ main{
   width: 200px;
   float: left;
   background-color: black;
-  height: 100%;
+  height: calc(100% - 80px);
   z-index: 900;
 }
 
 #l_bar > img{
   margin-bottom: 10%;
+  margin-left: 5%;
+  max-width: 100%;
 }
 
 .l_bar_top{
@@ -74,7 +77,7 @@ main{
 }
 
 .l_bar_top img{
-  max-width: 40px;
+  max-width: 30px;
 }
 
 .l_bar_top p{
@@ -82,17 +85,47 @@ main{
   font-weight: bold;
 }
 
+.filler{
+  width: 100%;
+}
+
 .l_bar_bot{
   display: flex;
   align-items: flex-end;
-  height: calc(100% - 80px);
   position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .l_bar_top2{
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   padding: 5px;
+}
+
+
+.l_bar_top2 img{
+  max-width: 15%;
+  background-color: grey;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.l_bar_top2 p{
+  padding: 0 10px;
+}
+
+@media all and (max-height: 537px) {
+  #l_bar .l_bar_bot{
+    position: static;
+  }
+}
+
+ul{
+  height: 25%;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 
