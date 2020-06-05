@@ -44,13 +44,11 @@ header h4 a{
 }
 
 main{
-  margin: 20px 0;
+  margin: 20px 0 85px 0;
   float: right;
-  /* display: flex; */
-  position: relative;
   color: white;
   background-color: #141922;
-  /* height: calc(1000px - 80px); */
+  /* height: calc(100% - 180px); */
   width: calc(100% - 200px);
   overflow: hidden;
 }
@@ -87,8 +85,16 @@ main{
 .l_bar_bot{
   display: flex;
   align-items: flex-end;
-
+  height: calc(100% - 80px);
+  position: absolute;
 }
+
+.l_bar_top2{
+  display: flex;
+  align-items: flex-end;
+  padding: 5px;
+}
+
 
 .main_bar{
   width: 100%;
@@ -124,5 +130,30 @@ main{
 }
 
 .gallery2 img{
-  max-width: 80%;
+  max-width: 100%;
+}
+
+.gallery_content2{
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 16%;
+}
+
+.round{
+  border-radius: 50%;
+}
+
+footer{
+  padding: 0 5%;
+  display: flex;
+  background-color: #282828;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  align-items: flex-end;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
 }
