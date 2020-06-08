@@ -22,6 +22,15 @@ body{
   color: white;
 }
 
+.main_bar a:hover{
+  border-bottom: 3px solid green;
+
+}
+
+.main_bar a:focus{
+  border-bottom: 3px solid green;
+}
+
 .b_pad{
   padding: 0 5%;
 }
@@ -29,6 +38,11 @@ body{
 h4{
   padding: 5px 0;
 }
+
+h3{
+  padding: 40px 0;
+}
+
 
 header{
   background-color: #141922;
@@ -65,6 +79,11 @@ main{
   /* height: calc(230vh - 80px); */
   width: calc(100% - 200px);
   overflow: hidden;
+}
+
+main p.sub_t{
+  padding-bottom: 20px;
+  color: grey;
 }
 
 #l_bar{
@@ -141,6 +160,7 @@ main{
 .gallery_content .overme, .gallery_content2 .overme{
   opacity: 0;
   font-size: 3.5em;
+  cursor: pointer;
   line-height: 100%;
   position: absolute;
   top: 0;
@@ -159,6 +179,7 @@ main{
 
 .gallery_content2 .overme2{
   opacity: 0;
+  cursor: pointer;
   font-size: 2.5em;
   line-height: 100%;
   position: absolute;
@@ -212,6 +233,16 @@ ul{
   flex-direction: column;
   align-items: center;
   width: 20%;
+  text-align: center;
+}
+
+.gallery_content p, .gallery_content2{
+  font-size: 15px;
+}
+
+.gallery_content p:last-child{
+  font-size: 10px;
+  color: grey;
 }
 
 .gallery_content img{
@@ -372,7 +403,7 @@ ul{
   }
 }
 
-@media all and (min-width:993px) and (max-width:2500px) {
+@media all and (min-width:993px) {
 
   .gallery {
     display: flex;
@@ -415,12 +446,17 @@ ul{
     flex-wrap: wrap;
     width:100%;
   }
+
   .gallery_content{
     width: 22%;
     min-width:90px !important;
     margin-right: 10px;
     height:auto;
     text-align: center;
+  }
+
+  .gallery_content2{
+    width: 22%;
   }
   .gallery_content:nth-of-type(4) {
     margin-right:0;
@@ -454,19 +490,19 @@ ul{
     flex-wrap: wrap;
   }
   .gallery_content, .gallery_content2{
-        width: calc((100% - (10px * 1)) / 2);
+    width: calc((100% - (10px * 1)) / 2);
     margin-right: 10px;
     min-width: 60px;
     height:auto;
     text-align: center;
-
   }
+
   .gallery_content, .gallery_content2:nth-of-type(even) {
     margin-right:0;
   }
 }
 
-
+/* B_bar MQ */
 
 @media all and (max-width:575px){
 
@@ -579,7 +615,7 @@ main {
   }
 
   .gallery_content, .gallery_content2{
-        width: calc((100% - (10px * 1)) / 2);
+    width: calc((100% - (10px * 1)) / 2);
     margin-right: 10px;
     min-width: 60px;
     height:auto;
