@@ -8,13 +8,26 @@ body{
   background-color: #141922;
 }
 
-a{
+.padding_bot5x{
+  padding-bottom: 5px;
+}
+
+#l_bar a{
+  text-decoration: none;
+  color: #a3a3a3;
+}
+
+ a{
   text-decoration: none;
   color: white;
 }
 
 .b_pad{
   padding: 0 5%;
+}
+
+h4{
+  padding: 5px 0;
 }
 
 header{
@@ -85,6 +98,10 @@ main{
   font-weight: bold;
 }
 
+#l_bar ul li{
+  padding: 5px;
+}
+
 .filler{
   width: 100%;
 }
@@ -122,6 +139,51 @@ main{
   }
 }
 
+.img_over{
+  position: relative;
+  max-width: 100%;
+}
+
+.gallery_content .overme, .gallery_content2 .overme{
+  opacity: 0;
+  font-size: 3.5em;
+  line-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0,0.4);
+  opacity: 0;
+  color: #fff;
+  padding: 38%;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery_content2 .overme2{
+  opacity: 0;
+  font-size: 2.5em;
+  line-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0,0.4);
+  opacity: 0;
+  color: #fff;
+  padding: 38%;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery_content .img_over:hover .overme, .gallery_content2 .img_over:hover .overme, .gallery_content2 .img_over:hover .overme2{
+  opacity: 1;
+}
+
+
+
+
 ul{
   height: 25%;
   overflow-x: auto;
@@ -145,7 +207,7 @@ ul{
 }
 
 .gallery_content{
-  /* padding-right: 20px; */
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,7 +215,7 @@ ul{
 }
 
 .gallery_content img{
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .gallery2{
@@ -183,7 +245,7 @@ ul{
   background-color: #282828;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   position: fixed;
   bottom:0;
   left:0;
@@ -251,7 +313,6 @@ ul{
 
 #b_bar .b_player{
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -263,6 +324,7 @@ ul{
   height: 5px;
   border-radius: 10px;
   margin: 0 5px;
+
 }
 
 #b_bar .b_player_current{
@@ -270,6 +332,7 @@ ul{
   width: 75%;
   height: 5px;
   background-color: white;
+  border-radius: 10px;
 }
 
 #b_bar .b_player_bg i{
@@ -291,4 +354,10 @@ ul{
   width: 250px;
   display: flex;
   justify-content: space-between;
+}
+
+#b_bar .audio button{
+  vertical-align: middle;
+  font-size: 10px;
+  padding-bottom: 0;
 }
