@@ -4,6 +4,20 @@ function playAudio() {
   x.play();
 }
 
+
+function playPause() {
+    var mediaClip = document.getElementById("metallica_audio");
+    if (mediaClip.paused) {
+        mediaClip.play();
+        document.body
+    } else {
+        mediaClip.pause();
+
+    }
+}
+
+
+
 var e = document.querySelector('.volume-slider-con');
 var eInner = document.querySelector('.volume-slider');
 var audio = document.querySelector('audio');

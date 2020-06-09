@@ -334,6 +334,7 @@ ul{
 }
 
 #b_bar button{
+  cursor: pointer;
   background-color: transparent;
   color: white;
   border: none;
@@ -398,6 +399,7 @@ ul{
 }
 
 .volume-slider-con{
+  cursor: ew-resize;
   height:10px;
   width:100%;
      position:relative;
