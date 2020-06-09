@@ -22,14 +22,10 @@ body{
   color: white;
 }
 
-.main_bar a:hover{
-  border-bottom: 3px solid green;
-
-}
-
-.main_bar a:focus{
-  border-bottom: 3px solid green;
-}
+/* p{
+  font-weight: bold;
+  color: #a3a3a3;
+} */
 
 .b_pad{
   padding: 0 5%;
@@ -70,22 +66,6 @@ header h4 a{
   height: 100px;
 }
 
-main{
-  margin: 20px 0 85px 0;
-  float: right;
-  color: white;
-  background-color: #141922;
-  height: 100%;
-  /* height: calc(230vh - 80px); */
-  width: calc(100% - 200px);
-  overflow: hidden;
-}
-
-main p.sub_t{
-  padding-bottom: 20px;
-  color: grey;
-}
-
 #l_bar{
   color: #a3a3a3;
   position: fixed;
@@ -99,13 +79,24 @@ main p.sub_t{
 #l_bar > img{
   margin-bottom: 10%;
   margin-left: 5%;
-  max-width: 100%;
+  margin-top: 5%;
+  width: 70%;
 }
 
 .l_bar_top{
   display: flex;
   align-items: center;
   padding: 5px;
+}
+
+.l_bar_top:hover{
+  border-left: solid green 3px;
+  color: white;
+}
+
+#l_bar a:focus .l_bar_bot{
+  border-left: solid green 3px;
+  color: white;
 }
 
 .l_bar_top img{
@@ -117,8 +108,13 @@ main p.sub_t{
   font-weight: bold;
 }
 
+.l_bar_top i{
+  font-size: 50px;
+}
+
 #l_bar ul li{
   padding: 5px;
+  font-weight: bold;
 }
 
 .filler{
@@ -141,6 +137,7 @@ main p.sub_t{
 }
 
 
+
 .l_bar_top2 img{
   max-width: 15%;
   background-color: grey;
@@ -149,7 +146,16 @@ main p.sub_t{
 }
 
 .l_bar_top2 p{
-  padding: 0 10px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.grey{
+  color: white;
+}
+
+.smaller{
+  font-size: 12px;
 }
 
 .img_over{
@@ -202,15 +208,47 @@ main p.sub_t{
   opacity: 1;
 }
 
-
-
-
 ul{
-  height: 25%;
+  height: 30%;
   overflow-x: auto;
   overflow-y: auto;
 }
 
+.ops{
+  width: 35%;
+  text-align: center;
+  display: none;
+}
+
+.ops hr{
+  color: lightgreen;
+  background-color: green;
+  margin-top: 2px;
+}
+
+.main_bar a:hover .ops{
+  display: block;
+}
+
+.main_bar a:focus .ops{
+  display: block;
+}
+
+main{
+  margin: 20px 0 85px 0;
+  float: right;
+  color: white;
+  background-color: #141922;
+  height: 100%;
+  width: calc(100% - 200px);
+  overflow: hidden;
+}
+
+main p.sub_t{
+  padding-bottom: 20px;
+  color: #a3a3a3;
+  font-weight: bold;
+}
 
 .main_bar{
   width: 100%;
@@ -220,6 +258,11 @@ ul{
 
 .main_bar a{
   padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #a3a3a3;
+  font-weight: bold;
 }
 
 .gallery{
@@ -238,11 +281,14 @@ ul{
 
 .gallery_content p, .gallery_content2{
   font-size: 15px;
+  font-weight: bold;
 }
 
 .gallery_content p:last-child{
   font-size: 10px;
   color: grey;
+  font-weight: bold;
+
 }
 
 .gallery_content img{
@@ -265,6 +311,8 @@ ul{
   flex-direction: column;
   align-items: center;
   width: 16%;
+  font-weight: bold;
+
 }
 
 .round{
