@@ -393,8 +393,22 @@ ul{
   padding-bottom: 0;
 }
 
+.b_vol{
+  width: 100%;
+}
 
-
+.volume-slider-con{
+  height:10px;
+  width:100%;
+     position:relative;
+  background-color:#ddd;
+}
+.volume-slider{
+   height:100%;
+   width:100%;
+   position:relative;
+   background-color:green;
+}
 
 
 

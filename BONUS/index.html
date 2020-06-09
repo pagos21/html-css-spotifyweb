@@ -84,11 +84,6 @@
 
     <h3>RECENTLY PLAYED</h3>
 
-    <audio id="metallica_audio">
-      <source src="songs/master.mp3" type="audio/mpeg">
-      Not Supported Sorry.
-    </audio>
-
     <div class="gallery">
       <div class="gallery_content">
         <div class="img_over">
@@ -238,9 +233,17 @@
       <button type="button" name="button"><i class="fas fa-sliders-h"></i></button>
       <button type="button" name="button"><i class="fas fa-tv"></i></button>
       <button type="button" name="button"><i class="fas fa-volume-up"></i></button>
-      <div class="b_player">
-        <i class="fas fa-volume-up"></i>
-        <input type="range" id="volumeslider" min="0" max="1" step="0.01">
+      <div class="b_vol">
+        <audio id="metallica_audio">
+          <source src="songs/master.mp3" type="audio/mpeg">
+          Not Supported Sorry.
+        </audio>
+        <div class="volume-slider-con"></div>
+<div class="volume-slider"></div>
+
+
+
+
          </div>
 
        </div>
