@@ -83,6 +83,10 @@ header h4 a{
   width: 70%;
 }
 
+ #Logo_min{
+  display: none;
+}
+
 .l_bar_top{
   display: flex;
   align-items: center;
@@ -653,6 +657,14 @@ main p.sub_t{
 
 main {
   width: calc(100% - 50px);
+  }
+
+  #logo_big{
+    display: none;
+  }
+
+   #Logo_min{
+    display: block;
   }
 
   .gallery, .gallery2 {
