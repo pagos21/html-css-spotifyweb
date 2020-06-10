@@ -102,6 +102,10 @@ main p.sub_t{
   max-width: 100%;
 }
 
+#l_bar > #Logo_min{
+  display: none;
+}
+
 .l_bar_top{
   display: flex;
   align-items: center;

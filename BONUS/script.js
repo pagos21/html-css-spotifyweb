@@ -9,8 +9,8 @@ function playPause() {
     var mediaClip = document.getElementById("metallica_audio");
     if (mediaClip.paused) {
         mediaClip.play();
-        document.body
-    } else {
+      }
+   else {
         mediaClip.pause();
 
     }
