@@ -22,11 +22,6 @@ body{
   color: white;
 }
 
-/* p{
-  font-weight: bold;
-  color: #a3a3a3;
-} */
-
 .b_pad{
   padding: 0 5%;
 }
@@ -74,6 +69,7 @@ header h4 a{
   background-color: black;
   height: calc(100% - 80px);
   z-index: 900;
+  overflow: auto;
 }
 
 #l_bar > img{
@@ -385,6 +381,10 @@ main p.sub_t{
   width: 30%;
 }
 
+#b_bar .controls{
+  display: flex;
+}
+
 #b_bar button{
   background-color: transparent;
   color: white;
@@ -685,5 +685,10 @@ main {
   .gallery_content, .gallery_content2:nth-of-type(even) {
     margin-right:0;
   }
+
+  #b_bar button{
+    font-size: 12px;
+  }
+
 
 }
